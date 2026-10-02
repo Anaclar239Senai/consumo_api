@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cat Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🐱</div>
+
+        <div>
+            <h1>Cat Finder</h1>
+            <p>Descubra informações sobre raças de gatos</p>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="pesquisa">
+
+            <h2>Encontre uma raça</h2>
+
+            <div class="barra-pesquisa">
+
+                <input
+                    type="text"
+                    id="racaInput"
+                    placeholder="Digite uma raça, ex: Siamese"
+                >
+
+                <button id="buscarBtn">
+                    Pesquisar
+                </button>
+
+            </div>
+
+            <p id="mensagem"></p>
+
+        </section>
+
+
+        <section id="resultado" class="resultado">
+
+            <div class="imagem-container">
+
+                <img
+                    id="imagemGato"
+                    src=""
+                    alt="Imagem do gato"
+                >
+
+            </div>
+
+
+            <div class="informacoes">
+
+                <span class="categoria">
+                    RAÇA DE GATO
+                </span>
+
+                <h2 id="nomeRaca">
+                    -
+                </h2>
+
+
+                <div class="info">
+
+                    <div class="item">
+
+                        <span class="icone">🌎</span>
+
+                        <div>
+                            <strong>Origem</strong>
+                            <p id="origem">-</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="item">
+
+                        <span class="icone">🧠</span>
+
+                        <div>
+                            <strong>Temperamento</strong>
+                            <p id="temperamento">-</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="item">
+
+                        <span class="icone">❤️</span>
+
+                        <div>
+                            <strong>Expectativa de vida</strong>
+                            <p id="vida">-</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="item">
+
+                        <span class="icone">⚖️</span>
+
+                        <div>
+                            <strong>Peso</strong>
+                            <p id="peso">-</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="item descricao">
+
+                        <span class="icone">📖</span>
+
+                        <div>
+                            <strong>Sobre a raça</strong>
+                            <p id="descricao">-</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        Projeto desenvolvido utilizando uma API pública de gatos.
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
